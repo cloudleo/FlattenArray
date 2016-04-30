@@ -5,7 +5,7 @@ var Flattener = function(){
 //simplier way to write it recursively and Object Oriented
 Flattener.prototype.flatten = function(unflattenedArray, flattenedArray) {
 
-   var self = this;
+   var self = this; // create a variable called self so I an refer to it within another function since it will be out of scope
     unflattenedArray.forEach(function(m){
     if(Array.isArray(m)){
      return self.flatten(m, self.flattenedArray);
